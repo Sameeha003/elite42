@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul.parent {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background-color: gray;
+li{
+  position: relative;
+  a{
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    &:hover {
+      color:red
+    }
+  }
+  
+    ul{
+      padding: 5px;
+      position: absolute;
+      display: none;
+      top: 24px;
+      background-color: gray;
+      width: 150px;
+    }
+    &:hover{
+      ul{
+        display: block;
+      }
+    }
+  }
+}
